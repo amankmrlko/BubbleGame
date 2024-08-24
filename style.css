@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans';
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #96d39b;
+   
+}
+#playarea{
+    overflow: hidden;
+    width: 80%;
+    height: 80%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #000;
+}
+#ptop{    
+    width: 100%;
+    height: 80px;
+    background-color: #6ba670;
+}
+#pbottom{    
+    width:100%;
+    height: calc(100%-80px);
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.bubble{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #3e573f;
+    color: #fff;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    
+}
+.bubble:hover{
+    cursor: pointer;
+    background-color: #5d8d61;
+}
+#ptop{
+    display: flex;
+    padding: 0 25%;
+    align-items: center;
+    justify-content: space-between;
+}
+.itemtop{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+}
+.box{
+    color: #5d8d61;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 700;
+}
+.itemtop h2{
+    font-weight: 400;
+}
+#startBtn{
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    background-color: #3e573f;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+#startBtn p{
+    font-family: 'Lucida Sans' !important;
+    font-size: 15px;
+}
+#startBtn:hover{
+    background-color: #5d8d61;
+    cursor: pointer;
+}
+
+#finalmsg{
+    background-color: #000000cd;
+    color:#3e573f;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: absolute;
+    display: none;
+}
+#cross{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    padding: 20px;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+#cross:hover{
+    cursor: pointer;
+}
+#cross p{
+    color:#fff;
+}
+.winner-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    justify-content: space-around;
+}
+.winner-text h2, h3{
+    margin: 20px;
+}
